@@ -1,0 +1,631 @@
+/* ------------------------------------Animation 1-------------------------------------- */
+
+.animation1-background {
+    height: 100%;
+    width: 100%;
+}
+
+.animation1-background:hover {
+    background-color: blueviolet;
+}
+
+.animation1-hover-me {
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;
+    transform: translateY(17vh)
+}
+
+/* ------------------------------------Animation 2-------------------------------------- */
+
+#animation2 {
+    flex-direction: row-reverse;
+}
+
+.animation2-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation2-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: rgb(44, 60, 202);
+    font-weight: bolder;
+    background-color: transparent;
+    border: 2px solid rgb(44, 60, 202);
+    transition: box-shadow 0.7s ease-in-out, color 0.7s ease-in-out;
+}
+
+.animation2-btn:hover {
+    -webkit-box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
+-moz-box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
+    box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
+    color: #fff;
+}
+
+/* ------------------------------------Animation 3-------------------------------------- */
+
+.animation3-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation3-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: #fff;
+    font-weight: bolder;
+    background-color: rgb(202, 107, 44);
+    transition: all 0.3s ease-in-out;
+}
+
+.animation3-btn:hover {
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
+    -moz-box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
+    box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
+}
+
+/* ------------------------------------Animation 4-------------------------------------- */
+
+#animation4 {
+    flex-direction: row-reverse;
+}
+
+.animation4-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation4-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: #fff;
+    font-weight: bolder;
+    border: 1px solid rgb(44, 202, 70);
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    background-image: linear-gradient(45deg, rgb(44, 202, 70) 50%, transparent 50%);
+    background-position: 100%; /*The background is placed at bottom-left position*/
+    background-size: 250%; /*Size more than double the button size to cover the button */
+}
+
+.animation4-btn:hover {
+    background-position: 0%;
+}
+
+/* ------------------------------------Animation 5-------------------------------------- */
+
+.animation5-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation5-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: #fff;
+    border-radius: 0px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: rgb(189, 44, 202, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.animation5-btn:hover {
+    border-top: 1px solid rgb(189, 44, 202, 0.3);
+    border-bottom: 1px solid rgb(189, 44, 202, 0.3);
+    background-color: transparent;
+    transform: scale(1.2);
+}
+
+/* ------------------------------------Animation 6-------------------------------------- */
+
+#animation6 {
+    flex-direction: row-reverse;
+}
+
+.animation6-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation6-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 70%;
+    color: rgb(0, 255, 234, 0.4);
+    font-weight: bolder;
+    border-radius: 0px;
+    background-color: rgb(255, 255, 255, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.animation6-btn::before { /*Inserts an element before the animation6-btn*/
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+
+.animation6-btn:hover::before {
+    transform: rotate(45deg);
+}
+
+.animation6-btn::after { /*Inserts an element after the animation6-btn*/
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.1);
+}
+
+.animation6-btn:hover::after {
+    transform: rotate(-45deg);
+}
+
+/* ------------------------------------Animation 7-------------------------------------- */
+
+.animation7-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation7-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: #fff;
+    border-radius: 0px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: transparent;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.animation7-btn::before {
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background-color: rgba(255, 72, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+.animation7-btn:hover::before {
+    transform: scale(0.02);
+}
+
+.animation7-btn::after {
+    content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.animation7-btn:hover::after {
+    border: 1px solid rgba(255, 72, 0);
+    transform: scale(1.2);
+}
+
+/* ------------------------------------Animation 8-------------------------------------- */
+
+#animation8 {
+    flex-direction: row-reverse;
+}
+
+.animation8-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation8-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: #000;
+    font-weight: bolder;
+    border-radius: 0px;
+    background-color: rgb(5, 255, 242);
+    transition: all 0.3s ease-in-out;
+}
+
+.animation8-btn:hover {
+    -webkit-box-shadow: 0px 0px 5px 10px rgba(255,255,255,0.5);
+    -moz-box-shadow: 0px 0px 5px 10px rgba(255,255,255,0.5);
+    box-shadow: 0px 0px 5px 10px rgba(255,255,255,0.5);
+    transform: scale(1.2);
+}
+
+/* ------------------------------------Animation 9-------------------------------------- */
+
+.animation9-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation9-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: #fff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: rgba(37, 37, 37, 0.9);
+    transition: all 0.5s ease-in-out;
+}
+
+.animation9-btn::before {
+    content: '';
+	position: absolute;
+	top: -7vh;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    transform: scale(0.4);
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    background-position: 100%;
+}
+
+.animation9-btn:hover {
+    background-color: transparent;
+}
+
+.animation9-btn:hover::before {
+    top: 0vh;
+    transform: scale(1);
+    border-bottom: 2px solid rgba(255, 255, 255);
+}
+
+/* ------------------------------------Animation 10-------------------------------------- */
+
+#animation10 {
+    flex-direction: row-reverse;
+}
+
+.animation10-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation10-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: rgb(119, 0, 255);
+    font-weight: bolder;
+    z-index: 0;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.animation10-btn::after {
+    content: 'Hover me';
+	position: absolute;
+	top: 0vh;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 4px;
+    padding: auto;
+    background-color: rgb(119, 0, 255);
+    transition: all 0.5s ease-in-out;
+}
+
+.animation10-btn:hover::after {
+    transform: translateY(-100%);
+}
+
+/* ------------------------------------Animation 11-------------------------------------- */
+
+.animation11-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.animation11-btn {
+    margin: 10px;
+    height: 7vh;
+    width: 50%;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 0px;
+    background-color: transparent;
+    border-top: 2px solid rgb(27, 189, 100);
+    border-bottom: 2px solid rgb(27, 189, 100);
+    transition: all 0.3s ease-in-out;
+}
+
+.animation11-btn:hover {
+    transform: scale(1.2);
+    border-top: 0px solid rgb(27, 189, 100);
+    border-right: 2px solid rgb(27, 189, 100);
+    border-bottom: 0px solid rgb(27, 189, 100);
+    border-left: 2px solid rgb(27, 189, 100);
+}
+
+/* @keyframes animation11-btn-animation {
+    0%{ border-top: 2px solid rgb(27, 189, 100); }
+    33%{ border-right: 2px solid rgb(27, 189, 100); }
+    66%{ border-bottom: 2px solid rgb(27, 189, 100); }
+    100%{ border-left: 2px solid rgb(27, 189, 100); }
+} */
+
+/* ----------------------------------------Animation 12---------------------------------------- */
+
+#animation12 {
+    flex-direction: row-reverse;
+}
+
+.animation12-box {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/scene.jpg');
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.animation12-container1 {
+    height: 100%;
+    width: 0%;
+    background-color: black;
+    animation: animation12-container1-animation 5s ease-in-out infinite alternate;
+}
+
+@keyframes animation12-container1-animation {
+    100% { width: 80%; }
+}
+
+.animation12-container2 {
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+}
+
+.animation12-container3 {
+    height: 100%;
+    width: 80%;
+    background-color: black;
+    animation: animation12-container3-animation 5s ease-in-out infinite alternate;
+}
+
+@keyframes animation12-container3-animation {
+    100% { width: 0%; }
+}
+
+/* ----------------------------------------Animation 13---------------------------------------- */
+
+.animation13-box {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.animation13-circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#circle1 {
+    background-color: rebeccapurple;
+    animation: circle1-animation 5s infinite alternate;
+}
+
+@keyframes circle1-animation {
+    14% { 
+        -webkit-box-shadow: 0px 0px 10px 5px rebeccapurple;
+        -moz-box-shadow: 0px 0px 10px 5px rebeccapurple;
+        box-shadow: 0px 0px 10px 5px rebeccapurple;
+        transform: translateY(-40px);
+    }
+}
+
+#circle2 {
+    background-color: darkorange;
+    animation: circle2-animation 5s infinite alternate;
+}
+
+@keyframes circle2-animation {
+    28% { 
+        -webkit-box-shadow: 0px 0px 10px 5px darkorange;
+        -moz-box-shadow: 0px 0px 10px 5px darkorange;
+        box-shadow: 0px 0px 10px 5px darkorange;
+        transform: translateY(-40px);
+    }
+}
+
+#circle3 {
+    background-color: forestgreen;
+    animation: circle3-animation 5s infinite alternate;
+}
+
+@keyframes circle3-animation {
+    42% { 
+        -webkit-box-shadow: 0px 0px 10px 5px forestgreen;
+        -moz-box-shadow: 0px 0px 10px 5px forestgreen;
+        box-shadow: 0px 0px 10px 5px forestgreen;
+        transform: translateY(-40px);
+    }
+}
+
+#circle4 {
+    background-color: palevioletred;
+    animation: circle4-animation 5s infinite alternate;
+}
+
+@keyframes circle4-animation {
+    56% { 
+        -webkit-box-shadow: 0px 0px 10px 5px palevioletred;
+        -moz-box-shadow: 0px 0px 10px 5px palevioletred;
+        box-shadow: 0px 0px 10px 5px palevioletred;
+        transform: translateY(-40px);
+    }
+}
+
+#circle5 {
+    background-color: khaki;
+    animation: circle5-animation 5s infinite alternate;
+}
+
+@keyframes circle5-animation {
+    70% { 
+        -webkit-box-shadow: 0px 0px 10px 5px khaki;
+        -moz-box-shadow: 0px 0px 10px 5px khaki;
+        box-shadow: 0px 0px 10px 5px khaki;
+        transform: translateY(-40px);
+    }
+}
+
+#circle6 {
+    background-color: crimson;
+    animation: circle6-animation 5s ease-out infinite alternate;
+}
+
+@keyframes circle6-animation {
+    84% { 
+        -webkit-box-shadow: 0px 0px 10px 5px crimson;
+        -moz-box-shadow: 0px 0px 10px 5px crimson;
+        box-shadow: 0px 0px 10px 5px crimson;
+        transform: translateY(-40px);
+    }
+
+    100% { 
+        -webkit-box-shadow: 0px 0px 10px 10px transparent;
+        -moz-box-shadow: 0px 0px 10px 10px transparent;
+        box-shadow: 0px 0px 10px 10px transparent;
+        transform: translateY(0px);
+    }
+}
+
+/* ----------------------------------------Animation 14---------------------------------------- */
+
+#animation14 {
+    flex-direction: row-reverse;
+}
+
+.animation14-box {
+    position: relative;
+    top: 40%;
+    left: 35%;
+    height: 50px;
+    width: 30%;
+    /* background-color: aqua; */
+}
+
+.animation14-rect {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: rgba(203, 227, 250, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 32%;
+    border-bottom-right-radius: 32%;
+    animation: animation14-rect-animation 2s infinite alternate;
+}
+
+@keyframes animation14-rect-animation {
+    100% {
+        width: 100%;
+    }
+}
+
+.animation14-circle {
+    position: absolute;
+    /* left: 30%;
+    top: 40%; */
+    margin-left: 3px;
+    height: 50px;
+    width: 50px;
+    color: #000;
+    border-radius: 50%;
+    background-color: aliceblue;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animation14-circle-animation 2s infinite alternate;
+}
+
+@keyframes animation14-circle-animation {
+    100% {
+        transform: translateX(100px) rotate(360deg);
+    }
+}
