@@ -1,0 +1,73 @@
+/* ------------------------------------Animation 1-------------------------------------- */
+.animation1-background {
+    height: 100%;
+    width: 100%;
+}
+
+.animation1-background:hover {
+    background-color: blueviolet;
+}
+
+.animation1-hover-me {
+    margin: 0px auto;
+    text-align: center;
+    color: #fff;
+    transform: translateY(17vh)
+}
+
+/* ----------------------------------------Animation 2---------------------------------------- */
+#animation2 {
+    flex-direction: row-reverse;
+}
+
+.animation2-box {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/scene.jpg');
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.animation2-container1 {
+    height: 100%;
+    width: 0%;
+    background-color: black;
+    animation: animation2-container1-animation 5s ease-in-out infinite alternate;
+}
+
+@keyframes animation2-container1-animation {
+    100% { width: 80%; }
+}
+
+.animation2-container2 {
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+}
+
+.animation2-container3 {
+    height: 100%;
+    width: 80%;
+    background-color: black;
+    animation: animation2-container3-animation 5s ease-in-out infinite alternate;
+}
+
+@keyframes animation2-container3-animation {
+    100% { width: 0%; }
+}
+
+/* ----------------------------------------Animation 3---------------------------------------- */
+.animation3-background {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, pink 50%, rgba(0,212,255,1) 100%);
+    background-size: 200% 100%;
+    animation: animation3-background-animation 10s infinite ease alternate;
+}
+
+@keyframes animation3-background-animation {
+    0%{background-position: 0% 100%}
+    100%{background-position: 100% 100%}
+}

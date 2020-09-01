@@ -1,0 +1,168 @@
+/* ----------------------------------------Animation 1---------------------------------------- */
+
+.animation1-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation1-rect {
+    height: 100px;
+    width: 200px;
+    background: linear-gradient(90deg, #0000ff 0%, rgb(47, 202, 0) 100%);
+    background-size: 300% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animation1-background-animation 2s infinite ease;
+}
+
+@keyframes animation1-background-animation {
+    0%{background-position: 0% 100%}
+    100%{background-position: 100% 100%}
+}
+
+.animation1-button {
+    height: 98px;
+    width: 200px;
+    background: #000;
+    color: #fff;
+}
+
+.animation1-text {
+    margin: 1% 5%;
+    text-align: center;
+}
+
+/* ----------------------------------------Animation 2---------------------------------------- */
+
+#animation2 {
+    flex-direction: row-reverse;
+}
+
+.animation2-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animation2-rect1 {
+    height: 100px;
+    width: 198px;
+    background: linear-gradient(90deg, #0000ff 0%, rgb(47, 202, 0) 100%);
+    background-size: 300% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animation2-background-animation-rect1 2s infinite ease;
+}
+
+.animation2-rect2 {
+    height: 98px;
+    width: 200px;
+    background: linear-gradient(0deg, #0000ff 0%, rgb(47, 202, 0) 100%);
+    background-size: 100% 200%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animation2-background-animation-rect2 2s infinite ease;
+}
+
+@keyframes animation2-background-animation-rect1 {
+    0%{background-position: 0% 100%}
+    100%{background-position: 100% 100%}
+}
+
+@keyframes animation2-background-animation-rect2 {
+    0%{background-position: 100% 0%}
+    100%{background-position: 100% 100%}
+}
+
+.animation2-button {
+    height: 98px;
+    width: 195px;
+    background: #000;
+    color: #fff;
+}
+
+.animation2-text {
+    margin: 1% 5%;
+    text-align: center;
+}
+
+/* ----------------------------------------Animation 3---------------------------------------- */
+
+.animation3-box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.animation3-rect1 {
+    height: 100px;
+    width: 2px;
+    background: linear-gradient(0deg, transparent 0%, #ff0000 100%);
+    background-size: 2px 400px;
+    background-position: 0px 500px;
+    /* animation: animation3-rect1-animation 1s ease-in forwards; */
+}
+
+@keyframes animation3-rect1-animation {
+    100% { background-position: 0px 100px;  }
+}
+
+.animation3-rect2 {
+    height: 100px;
+    width: 196px;
+}
+
+.animation3-rect2-1 {
+    height: 2px;
+    width: 196px;
+    background: linear-gradient(90deg, transparent 0%, #ff0000 100%);
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    /* animation: animation3-rect2-1-animation 1s 1s ease-in forwards; */
+}
+
+@keyframes animation3-rect2-1-animation {
+    0% { background-position: 100% 100%; }
+    100% { background-position: 200% 100%; }
+}
+
+.animation3-rect2-2 {
+    height: 2px;
+    width: 196px;
+    position: relative;
+    top: 98px;
+    bottom: 0;
+    background: linear-gradient(270deg, transparent 0%, #ff0000 100%);
+    background-size: 200% 100%;
+    background-position: 0% 100%;
+    /* animation: animation3-rect2-2-animation 1s 3s ease-in forwards; */
+}
+
+@keyframes animation3-rect2-2-animation {
+    0% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.animation3-rect3 {
+    height: 100px;
+    width: 2px;
+    background: linear-gradient(0deg, #ff0000 0%, transparent 100%);
+    background-size: 2px 400px;
+    background-position: 0px -800px;
+    animation: animation3-rect3-animation 1s ease-in forwards;
+}
+
+@keyframes animation3-rect3-animation {
+    100% { background-position: 0px 100px;  }
+}

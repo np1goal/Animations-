@@ -1,6 +1,6 @@
 .animation-document {
     background-color: #f6ecc4;
-background-image: linear-gradient(180deg, #f6ecc4 0%, #f7d4d4 74%);
+    background-image: linear-gradient(180deg, #f6ecc4 0%, #f7d4d4 74%);
     display: flex;
     flex-direction: column;
     justify-content: center;
