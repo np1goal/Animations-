@@ -5,8 +5,8 @@
     background-color: rgba($color: #000000, $alpha: 0.9);
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 5% 10% auto 10% 10% 10% 10%;
-    grid-template-areas: '. logo . button-animations background-animations border-animations loading-animations';
+    grid-template-columns: 5% 10% auto 10% 10% 10% 10% 10%;
+    grid-template-areas: '. logo . button-animations background-animations border-animations svg-animations loading-animations';
 }
 
 .nav-item {
@@ -39,5 +39,9 @@ a {
 }
 
 .nav-item:nth-child(5) {
+    grid-area: svg-animations;
+}
+
+.nav-item:nth-child(6) {
     grid-area: loading-animations;
 }
