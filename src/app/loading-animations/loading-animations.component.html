@@ -46,7 +46,7 @@
     <div id="animation2" class="animation-row">
         <div class="animation">
             <div class="animation2-circles">
-                <div class="circles">
+                <div class="circles" id="circles1">
                     <div class="c c1"></div>
                     <div class="c c2"></div>
                     <div class="c c3"></div>
@@ -56,17 +56,7 @@
                     <div class="c c7"></div>
                     <div class="c c8"></div>
                 </div>
-                <div class="circles">
-                    <div class="c c1"></div>
-                    <div class="c c2"></div>
-                    <div class="c c3"></div>
-                    <div class="c c4"></div>
-                    <div class="c c5"></div>
-                    <div class="c c6"></div>
-                    <div class="c c7"></div>
-                    <div class="c c8"></div>
-                </div>
-                <div class="circles">
+                <div class="circles" id="circles2">
                     <div class="c c1"></div>
                     <div class="c c2"></div>
                     <div class="c c3"></div>
@@ -98,12 +88,13 @@
     </div>
     <div id="animation4" class="animation-row">
         <div class="animation">
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <!-- <div class="ball-shadow"></div> -->
+            <div id="balls">
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+            </div>
         </div>
         <div class="code">
 
@@ -135,7 +126,9 @@
     <div id="animation6" class="animation-row">
         <div class="animation">
             <div class="animation6-circle">
-                <div class="animation6-circle-border"></div>
+                <div class="animation6-circle-border" id="outer-circle">
+                    <div class="animation6-circle-border" id="inner-circle"></div>
+                </div>
             </div>
         </div>
         <div class="code">

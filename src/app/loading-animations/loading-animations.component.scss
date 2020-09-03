@@ -156,7 +156,7 @@
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;  
+    grid-template-columns: auto auto;  
 }
 
 .circles {
@@ -173,14 +173,45 @@
     background-color: transparent;
 }
 
-.c1 { transform: translate(550%, 1000%); }
-.c2 { transform: translate(700%, 1050%); }
-.c3 { transform: translate(780%, 1200%); }
-.c4 { transform: translate(700%, 1350%); }
-.c5 { transform: translate(550%, 1400%); }
-.c6 { transform: translate(400%, 1350%); }
-.c7 { transform: translate(330%, 1200%); }
-.c8 { transform: translate(400%, 1050%); }
+.c1 { transform: translate(950%, 1000%); }
+.c2 { transform: translate(1100%, 1050%); }
+.c3 { transform: translate(1180%, 1200%); }
+.c4 { transform: translate(1100%, 1350%); }
+.c5 { transform: translate(950%, 1400%); }
+.c6 { transform: translate(800%, 1350%); }
+.c7 { transform: translate(730%, 1200%); }
+.c8 { transform: translate(800%, 1050%); }
+
+#circles1 .c {
+    opacity: 0;
+    animation: circles1-animation 1s infinite;
+}
+
+@for $i from 1 through 8 {
+    #circles1 .c:nth-child(#{$i}) {
+        animation-delay: $i * 0.1s;
+    }
+}
+
+@keyframes circles1-animation {
+    100% { opacity: 1; }
+}
+
+#circles2 .c {
+    background-color: transparent;
+    border-color: transparent;
+    animation: circles2-animation 1s infinite;
+}
+
+@for $j from 1 through 8 {
+    #circles2 .c:nth-child(#{$j}) {
+        animation-delay: $j * 0.1s;
+    }
+}
+
+@keyframes circles2-animation {
+    100% { background-color: aquamarine; }
+}
 
 // ---------------------------------Animation 3-------------------------------------------
 .symbols {
@@ -208,52 +239,48 @@
     flex-direction: row-reverse;
 }
 
-.animation5-balls {
-    position: relative;
+#balls {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .ball {
-    position: relative;
     display: inline-block;
-    top: 25%;
+    position: relative;
+    top: 10%;
     height: 20px;
     width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 50%;
-    background-color: #00c3ff;
+    background-color: #f34e4e;
 }
 
 .ball:nth-child(1) {
-    left: 20%;
     animation: animation4-ball-drop 1s infinite ease;
 }
 
 .ball:nth-child(2) {
-    left: 30%;
     animation: animation4-ball-drop 1s 0.1s infinite ease;
 }
 .ball:nth-child(3) {
-    left: 40%;
     animation: animation4-ball-drop 1s 0.2s infinite ease;
 }
 
 .ball:nth-child(4) {
-    left: 50%;
     animation: animation4-ball-drop 1s 0.3s infinite ease;
 }
 .ball:nth-child(5) {
-    left: 60%;
     animation: animation4-ball-drop 1s 0.4s infinite ease;
 }
 
 @keyframes animation4-ball-drop {
     // 45% { border-radius: 50%; height: 20px; }
-    40% { top: 50.5%; transform: scaleX(1.2); border-radius: 20px 20px 10px 10px; height: 10px; }
-    100% { top: 25%; transform: scaleX(1); }
-}
-
-@keyframes animation4-ball-shadow {
-    50% { width: 20px; opacity: 0.6; }
-    100% { width: 5px; }
+    40% { top: 95%; transform: scaleX(1.2); border-radius: 20px 20px 10px 10px; height: 10px; }
+    100% { top: 10%; transform: scaleX(1); }
 }
 
 // ---------------------------------Animation 5-------------------------------------------
@@ -289,15 +316,29 @@
 }
 
 .animation6-circle-border {
-    height: 100px;
-    width: 100px;
     background-color: transparent;
     border-radius: 50%;
-    border-top: 3px solid #98d606;
+    border-top: 3px solid #618806;
     border-right: 3px solid transparent;
-    border-bottom: 3px solid #98d606;
+    border-bottom: 3px solid #618806;
     border-left: 3px solid transparent;
-    animation: animation6-circle-rotation 2s infinite linear alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outer-circle {
+    height: 100px;
+    width: 100px;
+    animation: animation6-circle-rotation 2s infinite linear;
+}
+
+#inner-circle {
+    height: 85px;
+    width: 85px;
+    border-top-color: #b3ff00;
+    border-bottom-color: #b3ff00;
+    animation: animation6-circle-rotation 1.5s infinite linear;
 }
 
 @keyframes animation6-circle-rotation {
