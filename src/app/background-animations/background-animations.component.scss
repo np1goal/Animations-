@@ -2,62 +2,61 @@
 .animation1-background {
     height: 100%;
     width: 100%;
-}
 
-.animation1-background:hover {
-    background-color: blueviolet;
-}
-
-.animation1-hover-me {
-    margin: 0px auto;
-    text-align: center;
-    color: #fff;
-    transform: translateY(17vh)
+    &:hover {
+        background-color: blueviolet;
+    }
+    
+    .animation1-hover-me {
+        margin: 0px auto;
+        text-align: center;
+        color: #fff;
+        padding-top: 25%;
+    }
 }
 
 /* ----------------------------------------Animation 2---------------------------------------- */
 #animation2 {
     flex-direction: row-reverse;
-}
 
-.animation2-box {
-    height: 100%;
-    width: 100%;
-    background-image: url('../../assets/scene.jpg');
-    background-size: cover;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-}
+    .animation2-box {
+        height: 100%;
+        width: 100%;
+        background-image: url('../../assets/scene.jpg');
+        background-size: cover;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+    }
 
-.animation2-container1 {
-    height: 100%;
-    width: 0%;
-    background-color: black;
-    animation: animation2-container1-animation 5s ease-in-out infinite alternate;
+    .animation2-container1 {
+        height: 100%;
+        width: 0%;
+        background-color: black;
+        animation: animation2-container1-animation 5s ease-in-out infinite alternate;
+    }
+    
+    @keyframes animation2-container1-animation {
+        100% { width: 80%; }
+    }
+    
+    .animation2-container2 {
+        height: 100%;
+        width: 20%;
+        background-color: transparent;
+    }
+    
+    .animation2-container3 {
+        height: 100%;
+        width: 80%;
+        background-color: black;
+        animation: animation2-container3-animation 5s ease-in-out infinite alternate;
+    }
+    
+    @keyframes animation2-container3-animation {
+        100% { width: 0%; }
+    }
 }
-
-@keyframes animation2-container1-animation {
-    100% { width: 80%; }
-}
-
-.animation2-container2 {
-    height: 100%;
-    width: 20%;
-    background-color: transparent;
-}
-
-.animation2-container3 {
-    height: 100%;
-    width: 80%;
-    background-color: black;
-    animation: animation2-container3-animation 5s ease-in-out infinite alternate;
-}
-
-@keyframes animation2-container3-animation {
-    100% { width: 0%; }
-}
-
 /* ----------------------------------------Animation 3---------------------------------------- */
 .animation3-background {
     height: 100%;
