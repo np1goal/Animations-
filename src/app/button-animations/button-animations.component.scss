@@ -5,57 +5,54 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    /* background-color: red; */
-}
 
-.animation1-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: rgb(44, 60, 202);
-    font-weight: bolder;
-    background-color: transparent;
-    border: 2px solid rgb(44, 60, 202);
-    transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
-}
+    .animation1-btn {
+        margin: 10px;
+        height: 7vh;
+        width: 50%;
+        color: rgb(44, 60, 202);
+        font-weight: bolder;
+        background-color: transparent;
+        border: 2px solid rgb(44, 60, 202);
+        transition: all 0.5s ease-in;
 
-.animation1-btn:hover {
-    -webkit-box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
--moz-box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
-    box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
-    color: #fff;
+        &:hover {
+            -webkit-box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
+            -moz-box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
+            box-shadow: inset 0px 0px 40px 40px rgb(44, 60, 202);
+            color: #fff;
+        }
+    }
 }
 
 /* ------------------------------------Animation 2-------------------------------------- */
-
 #animation2 {
     flex-direction: row-reverse;
-}
 
-.animation2-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    /* background-color: red; */
-}
+    .animation2-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
 
-.animation2-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: #fff;
-    font-weight: bolder;
-    background-color: rgb(202, 107, 44);
-    transition: all 0.3s ease-in-out;
-}
+    .animation2-btn {
+        margin: 10px;
+        height: 7vh;
+        width: 50%;
+        color: #fff;
+        font-weight: bolder;
+        background-color: rgb(202, 107, 44);
+        transition: all 0.3s ease-out;
 
-.animation2-btn:hover {
-    background-color: transparent;
-    -webkit-box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
-    -moz-box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
-    box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
+        &:hover {
+            background-color: transparent;
+            -webkit-box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
+            -moz-box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
+            box-shadow: 0px 0px 35px 20px rgba(202,107,44,1);
+        }
+    }
 }
 
 /* ------------------------------------Animation 3-------------------------------------- */
@@ -65,58 +62,56 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    /* background-color: red; */
-}
 
-.animation3-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: #fff;
-    font-weight: bolder;
-    border: 1px solid rgb(44, 202, 70);
-    background-color: transparent;
-    transition: all 0.3s ease-in-out;
-    background-image: linear-gradient(45deg, rgb(44, 202, 70) 50%, transparent 50%);
-    background-position: 100%; /*The background is placed at bottom-left position*/
-    background-size: 250%; /*Size more than double the button size to cover the button */
-}
+    .animation3-btn {
+        margin: 10px;
+        height: 7vh;
+        width: 50%;
+        color: #fff;
+        font-weight: bolder;
+        border: 1px solid rgb(44, 202, 70);
+        background-color: transparent;
+        transition: all 0.3s ease-in-out;
+        background-image: linear-gradient(45deg, rgb(44, 202, 70) 50%, transparent 50%);
+        background-position: 100%; /*The background is placed at bottom-left position*/
+        background-size: 250%; /*Size more than double the button size to cover the button */
 
-.animation3-btn:hover {
-    background-position: 0%;
+        &:hover {
+            background-position: 0%;
+        }
+    }
 }
 
 /* ------------------------------------Animation 4-------------------------------------- */
 #animation4 {
     flex-direction: row-reverse;
-}
 
-.animation4-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    /* background-color: red; */
-}
+    .animation4-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
 
-.animation4-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: #fff;
-    border-radius: 0px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    background-color: rgb(189, 44, 202, 0.3);
-    transition: all 0.3s ease-in-out;
-}
+        .animation4-btn {
+            margin: 10px;
+            height: 7vh;
+            width: 50%;
+            color: #fff;
+            border-radius: 0px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            background-color: rgb(189, 44, 202, 0.3);
+            transition: all 0.3s ease-in-out;
 
-.animation4-btn:hover {
-    border-top: 1px solid rgb(189, 44, 202, 0.3);
-    border-bottom: 1px solid rgb(189, 44, 202, 0.3);
-    background-color: transparent;
-    transform: scale(1.2);
+            &:hover {
+                border-top: 1px solid rgb(189, 44, 202, 0.7);
+                border-bottom: 1px solid rgb(189, 44, 202, 0.7);
+                background-color: transparent;
+                transform: scale(1.2);
+            }
+        }
+    }    
 }
 
 /* ------------------------------------Animation 5-------------------------------------- */
@@ -127,109 +122,109 @@
     width: 100%;
     height: 100%;
     /* background-color: red; */
-}
 
-.animation5-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 70%;
-    color: rgb(0, 255, 234, 0.4);
-    font-weight: bolder;
-    border-radius: 0px;
-    background-color: rgb(255, 255, 255, 0);
-    transition: all 0.3s ease-in-out;
-}
+    .animation5-btn {
+        margin: 10px;
+        height: 7vh;
+        width: 70%;
+        color: rgb(0, 155, 142);
+        font-weight: bolder;
+        border-radius: 0px;
+        background-color: rgb(255, 255, 255, 0);
+        transition: all 0.3s ease-in-out;
 
-.animation5-btn::before { /*Inserts an element before the animation6-btn*/
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.5s;
-	border: 1px solid rgba(255,255,255,0.2);
-	background-color: rgba(255,255,255,0.1);
-}
+        &::before { /*Inserts an element before the animation6-btn*/
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: all 0.5s;
+            border: 1px solid rgba(255,255,255,0.2);
+            background-color: rgba(255,255,255,0.1);
+        }
+    
+        &:hover::before {
+            transform: rotate(45deg);
+        }
 
-.animation5-btn:hover::before {
-    transform: rotate(45deg);
-}
-
-.animation5-btn::after { /*Inserts an element after the animation6-btn*/
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	transition: all 0.5s;
-	border: 1px solid rgba(255,255,255,0.2);
-	background-color: rgba(255,255,255,0.1);
-}
-
-.animation5-btn:hover::after {
-    transform: rotate(-45deg);
+        &::after { /*Inserts an element after the animation6-btn*/
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: all 0.5s;
+            border: 1px solid rgba(255,255,255,0.2);
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        &:hover::after {
+            transform: rotate(-45deg);
+        }
+    }
 }
 
 /* ------------------------------------Animation 6-------------------------------------- */
 #animation6 {
     flex-direction: row-reverse;
-}
 
-.animation6-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    /* background-color: red; */
-}
+    .animation6-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
 
-.animation6-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: #fff;
-    border-radius: 0px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    background-color: transparent;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
-}
+        .animation6-btn {
+            margin: 10px;
+            height: 7vh;
+            width: 50%;
+            color: #fff;
+            border-radius: 0px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            background-color: transparent;
+            z-index: 1;
+            transition: all 0.3s ease-in-out;
 
-.animation6-btn::before {
-    content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-    background-color: rgba(255, 72, 0, 0.6);
-    transition: all 0.3s ease-in-out;
-}
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 72, 0, 0.6);
+                transition: all 0.3s ease-in-out;
+            }
+            
+            &:hover::before {
+                transform: scale(0);
+            }
 
-.animation6-btn:hover::before {
-    transform: scale(0.02);
-}
-
-.animation6-btn::after {
-    content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-    z-index: 1;
-    transition: all 0.3s ease-in-out;
-}
-
-.animation6-btn:hover::after {
-    border: 1px solid rgba(255, 72, 0);
-    transform: scale(1.2);
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                border: 0px solid rgba(255, 72, 0);
+                transition: all 0.3s ease-in-out;
+            }
+            
+            &:hover::after {
+                border: 1px solid rgba(255, 72, 0);
+                transform: scale(1.2);
+            }
+        }
+    }
 }
 
 /* ------------------------------------Animation 7-------------------------------------- */
@@ -239,73 +234,71 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    /* background-color: red; */
-}
+    
+    .animation7-btn {
+        margin: 10px;
+        height: 7vh;
+        width: 50%;
+        color: #000;
+        font-weight: bolder;
+        border-radius: 0px;
+        background-color: rgb(5, 255, 242);
+        transition: all 0.3s ease-in-out;
 
-.animation7-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: #000;
-    font-weight: bolder;
-    border-radius: 0px;
-    background-color: rgb(5, 255, 242);
-    transition: all 0.3s ease-in-out;
-}
-
-.animation7-btn:hover {
-    -webkit-box-shadow: 0px 0px 5px 10px rgba(255,255,255,0.5);
-    -moz-box-shadow: 0px 0px 5px 10px rgba(255,255,255,0.5);
-    box-shadow: 0px 0px 5px 10px rgba(255,255,255,0.5);
-    transform: scale(1.2);
+        &:hover {
+            -webkit-box-shadow: 0px 0px 5px 10px rgba(126, 126, 126, 0.5);
+            -moz-box-shadow: 0px 0px 5px 10px rgba(126, 126, 126, 0.5);
+            box-shadow: 0px 0px 5px 10px rgba(126, 126, 126, 0.5);
+            transform: scale(1.2);
+        }
+    }
 }
 
 /* ------------------------------------Animation 8-------------------------------------- */
 #animation8 {
     flex-direction: row-reverse;
-}
 
-.animation8-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    /* background-color: red; */
-}
+    .animation8-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
 
-.animation8-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: #fff;
-    font-weight: bolder;
-    text-transform: uppercase;
-    background-color: rgba(37, 37, 37, 0.9);
-    transition: all 0.5s ease-in-out;
-}
+        .animation8-btn {
+            margin: 10px;
+            height: 7vh;
+            width: 50%;
+            color: #fff;
+            font-weight: bolder;
+            text-transform: uppercase;
+            background-color: rgba(37, 37, 37, 0.9);
+            transition: all 0.5s ease-in-out;
 
-.animation8-btn::before {
-    content: '';
-	position: absolute;
-	top: -7vh;
-	left: 0;
-	width: 100%;
-    height: 100%;
-    transform: scale(0.4);
-    border-bottom: 1px solid transparent;
-    transition: all 0.5s ease-in-out;
-    background-position: 100%;
-}
+            &:hover {
+                background-color: transparent;
+            }
 
-.animation8-btn:hover {
-    background-color: transparent;
-}
+            &::before {
+                content: '';
+                position: absolute;
+                top: -100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: scale(0);
+                border-bottom: 1px solid transparent;
+                transition: all 0.5s ease-in-out;
+                background-position: 100%;
+            }
 
-.animation8-btn:hover::before {
-    top: 0vh;
-    transform: scale(1);
-    border-bottom: 2px solid rgba(255, 255, 255);
+            &:hover::before {
+                top: 0%;
+                transform: scale(1);
+                border-bottom: 2px solid rgba(255, 255, 255);
+            }
+        }
+    }
 }
 
 /* ------------------------------------Animation 9-------------------------------------- */
@@ -315,84 +308,87 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    /* background-color: red; */
-}
+    
+    .animation9-btn {
+        margin: 10px;
+        height: 7vh;
+        width: 50%;
+        color: rgb(119, 0, 255);
+        font-weight: bolder;
+        z-index: 0;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
 
-.animation9-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: rgb(119, 0, 255);
-    font-weight: bolder;
-    z-index: 0;
-    background-color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-.animation9-btn::after {
-    content: 'Hover me';
-	position: absolute;
-	top: 0vh;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	width: 100%;
-    height: 100%;
-    z-index: 1;
-    color: #fff;
-    font-size: 1.5em;
-    border-radius: 4px;
-    padding: auto;
-    background-color: rgb(119, 0, 255);
-    transition: all 0.5s ease-in-out;
-}
-
-.animation9-btn:hover::after {
-    transform: translateY(-100%);
+        &::after {
+            content: 'Hover me';
+            position: absolute;
+            top: 0vh;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            color: #fff;
+            font-size: 1.5em;
+            border-radius: 4px;
+            padding: auto;
+            background-color: rgb(119, 0, 255);
+            transition: all 0.5s ease-in-out;
+        }
+    
+        &:hover::after {
+            transform: translateY(-100%);
+        }
+    }
 }
 
 /* ------------------------------------Animation 10-------------------------------------- */
 #animation10 {
     flex-direction: row-reverse;
-}
 
-.animation10-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    /* background-color: red; */
-}
+    .animation10-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
 
-.animation10-btn {
-    margin: 10px;
-    height: 7vh;
-    width: 50%;
-    color: #fff;
-    font-weight: bolder;
-    border-radius: 0px;
-    background-color: transparent;
-    border-top: 2px solid rgb(27, 189, 100);
-    border-bottom: 2px solid rgb(27, 189, 100);
-    transition: all 0.3s ease-in-out;
-}
+        .animation10-btn {
+            margin: 10px;
+            height: 7vh;
+            width: 50%;
+            color: #fff;
+            font-weight: bolder;
+            background-color: transparent;
+            transform-origin: bottom;
+            transition: all 1s ease-in-out;
 
-.animation10-btn:hover {
-    transform: scale(1.2);
-    border-top: 0px solid rgb(27, 189, 100);
-    border-right: 2px solid rgb(27, 189, 100);
-    border-bottom: 0px solid rgb(27, 189, 100);
-    border-left: 2px solid rgb(27, 189, 100);
-}
+            &:hover {
+                letter-spacing: 2px;
+            }
 
-/* @keyframes animation10-btn-animation {
-    0%{ border-top: 2px solid rgb(27, 189, 100); }
-    33%{ border-right: 2px solid rgb(27, 189, 100); }
-    66%{ border-bottom: 2px solid rgb(27, 189, 100); }
-    100%{ border-left: 2px solid rgb(27, 189, 100); }
-} */
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0vh;
+                left: 25%;
+                height: 100%;
+                width: 50%;
+                transform: scaleX(0);
+                z-index: 1;
+                border-top: 2px solid rgb(27, 189, 100); 
+                border-bottom: 2px solid rgb(27, 189, 100); 
+                transition: all 1s ease-in-out;
+            }
+
+            &:hover::after {
+                transform: scaleY(1);
+            }
+        }
+    }
+}
 
 /* ----------------------------------------Animation 11---------------------------------------- */
 .animation11-box {
@@ -401,101 +397,106 @@
     left: 35%;
     height: 50px;
     width: 30%;
-    /* background-color: aqua; */
-}
-
-.animation11-rect {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    color: #fff;
-    background-color: rgba(203, 227, 250, 0.5);
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-right-radius: 32%;
-    border-bottom-right-radius: 32%;
-    animation: animation11-rect-animation 2s infinite alternate;
-}
-
-@keyframes animation11-rect-animation {
-    100% {
-        width: 100%;
+    
+    .animation11-rect {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        color: #fff;
+        background-color: rgba(203, 227, 250, 0.5);
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-right-radius: 32%;
+        border-bottom-right-radius: 32%;
+        animation: animation11-rect-animation 2s infinite alternate;
     }
-}
+    
+    @keyframes animation11-rect-animation {
+        50%, 100% {
+            width: 150px;
+        }
+    }
 
-.animation11-circle {
-    position: absolute;
-    /* left: 30%;
-    top: 40%; */
-    margin-left: 3px;
-    height: 50px;
-    width: 50px;
-    color: #000;
-    border-radius: 50%;
-    background-color: aliceblue;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: animation11-circle-animation 2s infinite alternate;
-}
-
-@keyframes animation11-circle-animation {
-    100% {
-        transform: translateX(120px) rotate(360deg);
+    .animation11-circle {
+        position: absolute;
+        margin-left: 3px;
+        height: 50px;
+        width: 50px;
+        color: #000;
+        border-radius: 50%;
+        background-color: aliceblue;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: animation11-circle-animation 2s infinite alternate;
+    }
+    
+    @keyframes animation11-circle-animation {
+        50%, 100% {
+            transform: translateX(110px) rotate(360deg);
+        }
     }
 }
 
 /* ----------------------------------------Animation 12---------------------------------------- */
 #animation12 {
     flex-direction: row-reverse;
+
+    .animation12-rect {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .animation12-wrapper{
+            height: 100px;
+            width: 100px;
+        }
+
+        .animation12-border-button {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 2px dotted #fff;
+            animation: animation12-border-button-animation 10s infinite linear;
+        }
+        
+        @keyframes animation12-border-button-animation {
+            100% { transform: rotateZ(360deg); }
+        }
+
+        .animation12-button {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 97px;
+            width: 97px;
+            background-color: #ff0077;
+            color: #fff;
+            border-radius: 50%;
+            animation: none !important;
+            cursor: pointer;
+            transform: translate(3.5%,-103.5%);
+        }
+        
+        .animation12-wrapper:hover .animation12-border-button {
+            animation: none !important;
+        }
+    }
 }
 
-.animation12-rect {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.animation12-wrapper{
-    height: 100px;
-    width: 100px;
-}
 
-.animation12-border-button {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 2px dotted #fff;
-    animation: animation12-border-button-animation 10s infinite linear;
-}
 
-@keyframes animation12-border-button-animation {
-    100% { transform: rotateZ(360deg); }
-}
 
-.animation12-button {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 97px;
-    width: 97px;
-    background-color: #ff0077;
-    color: #fff;
-    border-radius: 50%;
-    animation: none !important;
-    cursor: pointer;
-    transform: translate(3.5%,-103.5%);
-}
 
-.animation12-wrapper:hover .animation12-border-button {
-    animation: none !important;
-}
+
+
 

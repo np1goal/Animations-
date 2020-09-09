@@ -9,20 +9,31 @@
 .animation-row {
     margin: 5vh 0;
     height: 40vh;
-    /* background-color: rebeccapurple; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.button-row {
+    height: 30vh;
 }
 
 .animation {
     height: 100%;
     width: 35vw;
     background-color: black;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .code {
     height: 100%;
     width: 50vw;
     background-color: azure;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
 }
