@@ -27,16 +27,15 @@
     border-radius: 50%;
 }
 
-#three-dot1 div:nth-child(1) {
+#three-dot1 div {
     animation: animation1-three-dot1 1s infinite linear;
 }
 
-#three-dot1 div:nth-child(2) {
-    animation: animation1-three-dot1 1s 0.3s infinite linear;
-}
 
-#three-dot1 div:nth-child(3) {
-    animation: animation1-three-dot1 1s 0.6s infinite linear;
+@for $i from 1 through 3 {
+    #three-dot1 div:nth-child(#{$i}) {
+        animation-delay: $i * 0.3s;
+    }
 }
 
 @keyframes animation1-three-dot1 {
@@ -44,16 +43,14 @@
     100% { opacity: 1; }
 }
 
-#three-dot2 div:nth-child(1) {
+#three-dot2 div {
     animation: animation1-three-dot2 1s infinite linear;
 }
 
-#three-dot2 div:nth-child(2) {
-    animation: animation1-three-dot2 1s 0.2s infinite linear;
-}
-
-#three-dot2 div:nth-child(3) {
-    animation: animation1-three-dot2 1s 0.5s infinite linear;
+@for $i from 1 through 3 {
+    #three-dot2 div:nth-child(#{$i}) {
+        animation-delay: $i * 0.3s;
+    }
 }
 
 @keyframes animation1-three-dot2 {
@@ -61,22 +58,16 @@
     100% { transform: scale(1); }
 }
 
-#three-dot3 div:nth-child(1) {
+#three-dot3 div {
     border: 0.5px solid silver;
     background-color: transparent;
     animation: animation1-three-dot3 1s infinite linear;
 }
 
-#three-dot3 div:nth-child(2) {
-    border: 0.5px solid silver;
-    background-color: transparent;
-    animation: animation1-three-dot3 1s 0.2s infinite linear;
-}
-
-#three-dot3 div:nth-child(3) {
-    border: 0.5px solid silver;
-    background-color: transparent;
-    animation: animation1-three-dot3 1s 0.5s infinite linear;
+@for $i from 1 through 3 {
+    #three-dot3 div:nth-child(#{$i}) {
+        animation-delay: $i * 0.3s;
+    }
 }
 
 @keyframes animation1-three-dot3 {
@@ -84,16 +75,14 @@
     100% { background-color: transparent; }
 }
 
-#three-dot4 div:nth-child(1) {
+#three-dot4 div {
     animation: animation1-three-dot4 1s infinite ease-in;
 }
 
-#three-dot4 div:nth-child(2) {
-    animation: animation1-three-dot4 1s 0.3s infinite ease;
-}
-
-#three-dot4 div:nth-child(3) {
-    animation: animation1-three-dot4 1s 0.6s infinite ease;
+@for $i from 1 through 3 {
+    #three-dot4 div:nth-child(#{$i}) {
+        animation-delay: $i * 0.3s;
+    }
 }
 
 @keyframes animation1-three-dot4 {
@@ -102,19 +91,15 @@
     100% { transform: translateY(0px); }
 }
 
-#three-dot5 div:nth-child(1) {
+#three-dot5 div {
     transform: scale(0);
     animation: animation1-three-dot5 1s infinite ease-in-out both;
 }
 
-#three-dot5 div:nth-child(2) {
-    transform: scale(0);
-    animation: animation1-three-dot5 1s 0.3s infinite ease-in-out both;
-}
-
-#three-dot5 div:nth-child(3) {
-    transform: scale(0);
-    animation: animation1-three-dot5 1s 0.6s infinite ease-in-out both;
+@for $i from 1 through 3 {
+    #three-dot5 div:nth-child(#{$i}) {
+        animation-delay: $i * 0.3s;
+    }
 }
 
 @keyframes animation1-three-dot5 {
@@ -122,16 +107,14 @@
     70% { transform: scale(0); }
 }
 
-#three-dot6 div:nth-child(1) {
+#three-dot6 div {
     animation: animation1-three-dot6 1s infinite linear;
 }
 
-#three-dot6 div:nth-child(2) {
-    animation: animation1-three-dot6 1s 0.2s infinite linear;
-}
-
-#three-dot6 div:nth-child(3) {
-    animation: animation1-three-dot6 1s 0.5s infinite linear;
+@for $i from 1 through 3 {
+    #three-dot6 div:nth-child(#{$i}) {
+        animation-delay: $i * 0.3s;
+    }
 }
 
 @keyframes animation1-three-dot6 {
@@ -284,7 +267,7 @@
 }
 
 // ---------------------------------Animation 5-------------------------------------------
-.animation5-clock {
+.animation5-circle{
     height: 100%;
     width: 100%;
     display: flex;
@@ -292,30 +275,7 @@
     align-items: center;
 }
 
-#Path_770 {
-    // transform-origin: bottom;
-    // transform: rotateY(20deg);
-    // animation: animation5-clock 10s infinite ease;
-}
-
-@keyframes animation5-clock {
-    100% { transform: rotateZ(360deg); }
-}
-
-// ---------------------------------Animation 6-------------------------------------------
-#animation6 {
-    flex-direction: row-reverse;
-}
-
-.animation6-circle{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.animation6-circle-border {
+.animation5-circle-border {
     background-color: transparent;
     border-radius: 50%;
     border-top: 3px solid #618806;
@@ -330,7 +290,7 @@
 #outer-circle {
     height: 100px;
     width: 100px;
-    animation: animation6-circle-rotation 2s infinite linear;
+    animation: animation5-circle-rotation 2s infinite linear;
 }
 
 #inner-circle {
@@ -338,9 +298,9 @@
     width: 85px;
     border-top-color: #b3ff00;
     border-bottom-color: #b3ff00;
-    animation: animation6-circle-rotation 1.5s infinite linear;
+    animation: animation5-circle-rotation 1.5s infinite linear;
 }
 
-@keyframes animation6-circle-rotation {
+@keyframes animation5-circle-rotation {
     100%{ transform: rotate(360deg); }
 }
