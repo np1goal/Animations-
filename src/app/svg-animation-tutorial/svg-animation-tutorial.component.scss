@@ -4,68 +4,76 @@
     position: relative;
     width: 100%;
     z-index: 1;
+
+    .animation1-icon {
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        margin-top: 2vh;
+        justify-content: center;
+
+        .heart {
+            width: 90%;
+            z-index: 3;
+            padding-left: 20%;
+            stroke-width: 0.5;
+            stroke: aqua;
+            fill: transparent;
+        }
+        
+        .heart-path {
+            stroke-dasharray: 105;
+            stroke-dashoffset: 0;
+        }
+        
+        .heart:hover .heart-path {
+            animation: animation1-heart-animation 2s linear forwards;
+        }
+        
+        @keyframes animation1-heart-animation {
+            0% { stroke-dashoffset: 0; }
+            40% { stroke-dashoffset: 105; }
+            80% { stroke-dashoffset: 210; fill: transparent;}
+            100% { stroke-dashoffset: 210; fill: aqua; }
+        }
+    }
 }
 
-.animation1-icon {
-    z-index: 2;
-    width: 100%;
-    display: flex;
-    margin-top: 2vh;
-    justify-content: center;
-}
 
-.heart {
-    height: 50%;
-    width: 90%;
-    z-index: 3;
-    stroke-width: 0.5;
-    stroke: aqua;
-    fill: transparent;
-}
 
-.heart-path {
-    stroke-dasharray: 105;
-    stroke-dashoffset: 0;
-}
-
-.heart:hover .heart-path {
-    animation: animation1-heart-animation 2s linear forwards;
-}
-
-@keyframes animation1-heart-animation {
-    0% { stroke-dashoffset: 0; }
-    40% { stroke-dashoffset: 105; }
-    80% { stroke-dashoffset: 210; fill: transparent;}
-    100% { stroke-dashoffset: 210; fill: aqua; }
-}
 
 // ----------------------------------------Animation 2----------------------------------------
 
 #animation2 {
     flex-direction: row-reverse;
+
+    .animation2-container {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+
+        .animation2-text {
+            z-index: 2;
+            width: 100%;
+
+            .st0 {
+                stroke-dasharray: 3700;
+                stroke-dashoffset: 3700;
+                animation: animation2-text-animation 5s linear forwards infinite;
+            }
+            
+            @keyframes animation2-text-animation {
+                0% { stroke-dashoffset: 3700; }
+                80% { stroke-dashoffset: 0; fill: transparent;}
+                100% { stroke-dashoffset: 0; fill: #FF5589; }
+            }
+        }
+    }
 }
 
-.animation2-container {
-    position: relative;
-    width: 100%;
-    z-index: 1;
-    // margin-top: 8vh;
-}
 
-.animation2-text {
-    z-index: 2;
-    width: 100%;
-}
 
-.st0 {
-    stroke-dasharray: 3700;
-    stroke-dashoffset: 3700;
-    animation: animation2-text-animation 5s linear forwards infinite;
-}
 
-@keyframes animation2-text-animation {
-    0% { stroke-dashoffset: 3700; }
-    80% { stroke-dashoffset: 0; fill: transparent;}
-    100% { stroke-dashoffset: 0; fill: #FF5589; }
-}
+
+
 
