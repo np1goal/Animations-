@@ -6,34 +6,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.animation1-rect {
-    height: 100px;
-    width: 200px;
-    background: linear-gradient(90deg, #0000ff 0%, rgb(47, 202, 0) 100%);
-    background-size: 300% 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: animation1-background-animation 2s infinite ease;
-}
+    .animation1-rect {
+        height: 100px;
+        width: 200px;
+        background: linear-gradient(90deg, #0000ff 0%, rgb(47, 202, 0) 100%);
+        background-size: 300% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: animation1-background-animation 2s infinite ease;
 
-@keyframes animation1-background-animation {
-    0%{background-position: 0% 100%}
-    100%{background-position: 100% 100%}
-}
+        .animation1-button {
+            height: 98px;
+            width: 200px;
+            background: #000;
+            color: #fff;
 
-.animation1-button {
-    height: 98px;
-    width: 200px;
-    background: #000;
-    color: #fff;
-}
-
-.animation1-text {
-    margin: 1% 5%;
-    text-align: center;
+            .animation1-text {
+                margin: 1% 5%;
+                text-align: center;
+            }
+        }
+    }
+    
+    @keyframes animation1-background-animation {
+        0%{background-position: 0% 100%}
+        100%{background-position: 100% 100%}
+    }
 }
 
 /* ----------------------------------------Animation 2---------------------------------------- */

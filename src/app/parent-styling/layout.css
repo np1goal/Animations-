@@ -22,6 +22,10 @@
     height: 35vh;
 }
 
+.border-row {
+    height: 20vh;
+}
+
 .animation-num {
     margin-left: 5vw;
     letter-spacing: 1px;
